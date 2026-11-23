@@ -1,0 +1,13 @@
+{
+  "name": "loving-pets-adaptation",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "wrangler pages dev .",
+    "db:local": "wrangler d1 execute loving-pets-adoption --local --file=migrations/0001_initial.sql",
+    "db:remote": "wrangler d1 execute loving-pets-adoption --remote --file=migrations/0001_initial.sql"
+  },
+  "devDependencies": {
+    "wrangler": "^4.0.0"
+  }
+}
