@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fff8ef">
+  <meta name="description" content="Meet your new best friend. Discover adoptable pets and apply to give them a loving home.">
+  <title>Loving Pets Adaptation — Find your new best friend</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Nunito:wght@700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="Loving Pets Adaptation home"><span class="brand-mark">♥</span><span>Loving Pets <small>ADAPTATION</small></span></a>
+    <nav><a href="#pets">Find a pet</a><a href="#process">How it works</a><a href="#about">Our promise</a></nav>
+    <a class="button button-small" href="#pets">Meet your match <span>→</span></a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <span class="eyebrow"><span class="spark">✦</span> A little love changes everything</span>
+        <h1>Find your new<br><em>best friend.</em></h1>
+        <p>Big paws, tiny paws, and everything in between. Your new family member is waiting for a place to call home.</p>
+        <div class="hero-actions"><a class="button" href="#pets">Explore adoptable pets <span>→</span></a><a class="text-link" href="#process">How adoption works</a></div>
+        <div class="hero-note"><span class="avatar-stack"><b>🐶</b><b>🐱</b><b>🐰</b></span><span>Every pet deserves a loving home.</span></div>
+      </div>
+      <div class="hero-art">
+        <div class="sun-shape"></div>
+        <div class="hero-photo"><img src="https://images.unsplash.com/photo-1543466835-00a7907e9de1?auto=format&fit=crop&w=1000&q=85" alt="Happy dog looking at the camera"></div>
+        <div class="float-card float-top">🐾 <span>Love at first sight</span></div>
+        <div class="float-card float-bottom"><strong>One adoption</strong><small>One whole new beginning</small></div>
+        <span class="decor decor-one">✳</span><span class="decor decor-two">♥</span>
+      </div>
+    </section>
+
+    <section class="trust-strip" aria-label="Our values"><span>♡ Thoughtful matching</span><span>✿ Care-first adoption</span><span>☀ A lifetime of love</span></section>
+
+    <section class="pets-section section" id="pets">
+      <div class="section-heading"><div><span class="eyebrow">YOUR NEW SIDEKICK</span><h2>Meet the <em>cuties.</em></h2><p>Take a peek at the lovely pets looking for their forever homes.</p></div><a class="text-link" href="#adoption-form">Ready to adopt? →</a></div>
+      <div class="filters"><label class="search-box">⌕ <input id="search" type="search" placeholder="Search by name or breed" aria-label="Search pets"></label><div class="filter-buttons" id="filters"><button class="filter active" data-kind="all">All friends</button><button class="filter" data-kind="Dog">Dogs</button><button class="filter" data-kind="Cat">Cats</button><button class="filter" data-kind="Other">Others</button></div></div>
+      <div class="pet-grid" id="pet-grid"><div class="loading">Finding your future best friend… 🐾</div></div>
+    </section>
+
+    <section class="process-section section" id="process">
+      <div class="section-heading centered"><div><span class="eyebrow">EASY AS ONE, TWO, WOOF</span><h2>A little process.<br><em>A whole lot of love.</em></h2></div></div>
+      <div class="steps"><article><span class="step-icon peach">🐾</span><b>01 · Meet</b><h3>Find your kind of cute.</h3><p>Browse the pets and learn about each one's personality, needs, and story.</p></article><article><span class="step-icon yellow">✍️</span><b>02 · Apply</b><h3>Tell us about your home.</h3><p>Share a little about your experience and the loving life you can offer.</p></article><article><span class="step-icon green">💛</span><b>03 · Connect</b><h3>Make it official.</h3><p>Our team reviews every application and gets in touch about next steps.</p></article></div>
+    </section>
+
+    <section class="promise section" id="about"><div class="promise-art">🐕‍🦺<span>♡</span></div><div><span class="eyebrow">MORE THAN A MATCH</span><h2>Good homes are<br><em>made with love.</em></h2><p>Adoption is the beginning of a relationship. We want every pet and every person to feel ready for the journey. Our team reviews applications with care, asks questions, and helps find the right fit — without judging people by labels.</p><a class="button" href="#pets">Find your forever friend <span>→</span></a></div></section>
+
+    <section class="application-section section" id="adoption-form"><div class="application-intro"><span class="eyebrow">TAKE THE FIRST PAW</span><h2>Could this be<br><em>your happy ever after?</em></h2><p>Choose a pet and tell us a little about the home you can provide. Submitting an application is the start of a conversation, not an automatic approval.</p><div class="application-doodle">💌 🐾</div></div>
+      <form id="application-form" class="application-form">
+        <h3>Adoption interest form</h3><p class="form-sub">Fields marked * are required.</p>
+        <label>Pet you're interested in *<select name="pet_id" id="pet-select" required><option value="">Choose a pet</option></select></label>
+        <div class="form-row"><label>Your full name *<input name="applicant_name" required maxlength="120" autocomplete="name"></label><label>Email address *<input name="email" type="email" required maxlength="200" autocomplete="email"></label></div>
+        <div class="form-row"><label>Phone number *<input name="phone" required maxlength="40" autocomplete="tel"></label><label>City / area *<input name="city" required maxlength="120"></label></div>
+        <label>What type of home do you live in? *<select name="home_type" required><option value="">Select one</option><option>House</option><option>Apartment / condominium</option><option>Other</option></select></label>
+        <label>If you rent, do you have permission to keep a pet? *<select name="landlord_permission" required><option value="">Select one</option><option>Yes</option><option>Not applicable — I own my home</option><option>I'll confirm with my landlord</option></select></label>
+        <label>Are all household members comfortable with adopting? *<select name="household_agreement" required><option value="">Select one</option><option>Yes, everyone agrees</option><option>We're still discussing it</option></select></label>
+        <label>Have you cared for a pet before? *<textarea name="pet_experience" rows="2" required maxlength="1500" placeholder="Tell us about your experience, if any."></textarea></label>
+        <label>Do you currently have other pets?<textarea name="existing_pets" rows="2" maxlength="1000" placeholder="Tell us about them, if applicable."></textarea></label>
+        <label>How would you care for your new friend? *<textarea name="care_plan" rows="3" required maxlength="2000" placeholder="Think food, exercise, veterinary care, companionship, and a safe space."></textarea></label>
+        <label>Why would you like to adopt this pet? *<textarea name="motivation" rows="3" required maxlength="2000"></textarea></label>
+        <label class="consent"><input type="checkbox" required> I confirm these details are accurate and agree to be contacted about this application.</label>
+        <button class="button submit-button" type="submit">Send my adoption interest <span>→</span></button><p class="form-message" id="form-message" role="status"></p>
+      </form>
+    </section>
+  </main>
+  <footer><a class="brand" href="#"><span class="brand-mark">♥</span><span>Loving Pets <small>ADAPTATION</small></span></a><p>Every paw deserves a place to belong. <span>Made with ♥</span></p></footer>
+  <script src="/app.js"></script>
+</body></html>
